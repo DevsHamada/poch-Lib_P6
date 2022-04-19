@@ -14,7 +14,7 @@ To launch the application, you must open the "index.html" file in your web brows
 
 ### Search a book
 
-- Click on button <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/ajouter.PNG?raw=true"  >
+- Click on button <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/ajouter.PNG?raw=true"  width="150px">
 - Enter title & author name of a book and click on submit button **_Rechercher_** or cancel the search with button **_Annuler_**
 
 ### Add a book in "Ma poch'liste"
