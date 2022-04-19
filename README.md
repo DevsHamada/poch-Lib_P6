@@ -38,8 +38,8 @@ The Google Books API's is used to fetch the books with GET METHOD and display th
 
 A list of technologies used within the project:
 
-<img src="./assets/img/techno/html5.png" alt="HTML5 logo"><img src="./assets/img/techno/css3.png" alt="CSS3 logo"><img src="./assets/img/techno/sass.png" alt="SASS logo" ><img src="./assets/img/techno/javascript.png" alt="JS logo">
-
+<img src="https://raw.githubusercontent.com/DevsHamada/poch-Lib_P6/master/image/README/vasilyrosca190800069.jpg" alt="HTML5/css/js" ><img src="https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png" alt="SASS" width="150px">
 **Enjoy it !**
 
 <img src="./assets/img/logo/logo.svg" alt="Poch'lib logo" width="150px">
+
