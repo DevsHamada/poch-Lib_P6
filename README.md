@@ -1,5 +1,6 @@
 # poch-Lib_P6
 
+<img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/logo/logo.png" alt="Poch'lib logo" width="150px">
 ## General Info
 “La Plume enchantée” wants to create an application for
 allow them to search for books online and then pick them up at the
@@ -20,19 +21,20 @@ To launch the application, you must open the "index.html" file in your web brows
 
 ### Add a book in "Poch'liste"
 
-- Click on the icon bookmark  <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/bookmark.PNG"  width="80px"> .
-==> The book is added on the "Poch'liste"
+- Click on the icon bookmark  <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/bookmark.PNG"  width="20px"> .
+- And the book is added on the "Poch'liste"
 
 ### Remove a book in "Poch'liste"
 
-- Click on the icon trash <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/trash.PNG"  width="80px"> .
-  ==> and the book is removed on the "Poch'liste"
+- Click on the icon trash <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/trash.PNG"  width="20px"> .
+- And the book is removed on the "Poch'liste"
 
-### Search Method
+### API
 
-The Google Books API's is used to fetch the books with GET METHOD and display them in "Résultats de recherche" and "Ma poch'liste".
+[The Google Books API](https://developers.google.com/books/docs/v1/using) is used to search for books corresponding to the data entered in the form.
+[SessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage) is used to save the books in my "Poch'liste" with the localStorage
 
-### Storage
+
 
 ## Technologies
 
@@ -41,7 +43,5 @@ The Google Books API's is used to fetch the books with GET METHOD and display th
 A list of technologies used within the project:
 
 <img src="https://raw.githubusercontent.com/DevsHamada/poch-Lib_P6/master/image/README/vasilyrosca190800069.jpg" alt="HTML5/css/js" ><img src="https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png" alt="SASS" width="150px">
-**Enjoy it !**
 
-<img src="./assets/img/logo/logo.svg" alt="Poch'lib logo" width="150px">
 
