@@ -15,16 +15,18 @@ To launch the application, you must open the "index.html" file in your web brows
 ### Search a book
 
 - Click on button <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/ajouter.PNG?raw=true"  width="150px">
-- Enter title & author name of a book and click on submit button **_Rechercher_** or cancel the search with button **_Annuler_**
+- Enter title & author name of a book and click on : 
+- submit button <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/rechercher.PNG"  width="150px"> for search all the book 
 
-### Add a book in "Ma poch'liste"
+### Add a book in "Poch'liste"
 
-- Click on the icon bookmark on the top right of book description. The book is added on your favorite list.
+- Click on the icon bookmark  <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/bookmark.PNG"  width="80px"> .
+==> The book is added on the "Poch'liste"
 
-### Remove a book in "Ma poch'liste"
+### Remove a book in "Poch'liste"
 
-- Click on the icon trash on the top right of book description that was bookmarked precedently.
-  The book is removed on your favorite list.
+- Click on the icon trash <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/image/README/trash.PNG"  width="80px"> .
+  ==> and the book is removed on the "Poch'liste"
 
 ### Search Method
 
