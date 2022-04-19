@@ -1,0 +1,182 @@
+$Gray-95: #F2F2F2;
+$clr_shadow : black;
+$logo : url("../logo/logo.svg") ;
+$btn-cancel : #ef5134;
+$clr_book : #d2d2d2;
+$clr_bx_shadow : #b9b1b1;
+
+@mixin box-shadow($color){
+
+    box-shadow: 3px 2px 1px $color;
+}
+@mixin height-width($height,$width) {
+  height: $height;
+  width: $width; 
+}
+
+body {
+    background-color: $Gray-95; 
+}
+
+label {
+        display: block; }
+
+h1 {
+        font-family: 'Spartan', sans-serif;
+        margin-left: 2%; }    
+     
+.head {
+            display: flex;
+            align-items: center;
+            margin-left: 2%;
+            margin-top: 2%; 
+            justify-content: center;
+            &> .title {
+                box-sizing: content-box;
+                width: 100%; 
+                @include box-shadow($clr_bx_shadow);
+                background-color:rgb(227, 228, 230);
+                font-size: 1.8em;
+                padding: 12px;
+                border-radius: 10px 10px;
+            }
+          }
+.book {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                border: 2px solid;
+                padding: 1%;
+                margin-bottom: 2%;
+                background-color: $clr_book;
+                border-radius: 10px 10px;
+                width: 90%;   
+                & > .picture {
+                  border: 2px solid;
+                  @include box-shadow($clr_shadow);
+                  max-width: 50%;
+                  max-height: 50%;
+                  text-align: center;}         
+                &> .entete-book {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center; 
+                      & > .icon {
+                      @include height-width(30px,30px);
+                        align-self: flex-start;
+                        cursor: pointer;
+                        transform: scale(1);
+                        transition: transform 300ms; 
+                        .book > .entete-book > .icon:hover {
+                          transform: scale(1.2); }
+                        }
+                      }
+                    }
+                
+               
+#myBooks {
+    font-family: 'Spartan', sans-serif;
+    margin-right: 2%;
+    margin-left: 2%; 
+    text-align: center;
+                   }
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+        & > #title {
+            width: 100%;
+            font-size: 1.8em;
+            margin-bottom: 2%; }
+        & > #author {
+            width: 100%;
+            font-size: 1.8em; }
+        }
+#logo {
+  @include height-width(80px,80px);
+    background-image: $logo;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:white;
+    border: 1px solid;
+    border-radius: 5px 5px;
+    @include box-shadow($clr_shadow); }
+ 
+ #find-book {
+    background: #098080;
+    color: $Gray-95;
+    width: 170px;
+    cursor: pointer;
+    border-radius: 3px 3px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transform: scale(1);
+    transition: transform 300ms; 
+    #find-book:hover {
+      transform: scale(1.1);
+      background-color: #006767; }
+    }
+  #cancel {
+    background: $btn-cancel;
+    color: $Gray-95;
+    width: 170px;
+    cursor: pointer;
+    border-radius: 3px 3px;
+    transform: scale(1);
+    transition: transform 300ms; 
+    #cancel:hover {
+      transform: scale(1.1);
+      background-color: #ed3d1c; }
+    }
+
+    #add-book {
+        background: #098080;
+        color: $Gray-95;
+        @include height-width(40px,200px);
+        cursor: pointer;
+        border-radius: 3px 3px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        transform: scale(1);
+        transition: transform 300ms; 
+        #add-book:hover {
+          transform: scale(1.1);
+          background-color: #006767; }
+        }
+       #bookpop, #booktop  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+
+ @media screen and (min-width: 740px) and (max-width: 1024px) {
+            h1, h2 {
+              font-size: 1.5em; }
+          
+            label, #add-book, #find-book, #cancel {
+              font-size: 1.2em; }
+          
+            .book {
+              width: 38%; }
+
+            #logo {
+              @include height-width(120px,120px); } }
+
+ @media screen and (min-width: 1024px) {
+            h1 {
+              font-size: 2.5em; }
+          
+            h2 {
+              font-size: 2em; }
+          
+            label, #add-book, #find-book, #cancel {
+              font-size: 1.5em; }
+          
+            .book {
+              width: 25%; }
+          
+            #logo {
+              @include height-width(160px,160px); } 
+            }
+          

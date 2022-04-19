@@ -1,0 +1,254 @@
+body {
+  background-color: #F2F2F2;
+}
+
+label {
+  display: block;
+}
+
+h1 {
+  font-family: 'Spartan', sans-serif;
+  margin-left: 2%;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2%;
+  margin-top: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head > .title {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  -webkit-box-shadow: 3px 2px 1px #b9b1b1;
+          box-shadow: 3px 2px 1px #b9b1b1;
+  background-color: #e3e4e6;
+  font-size: 1.8em;
+  padding: 12px;
+  border-radius: 10px 10px;
+}
+
+.book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  border: 2px solid;
+  padding: 1%;
+  margin-bottom: 2%;
+  background-color: #d2d2d2;
+  border-radius: 10px 10px;
+  width: 90%;
+}
+
+.book > .picture {
+  border: 2px solid;
+  -webkit-box-shadow: 3px 2px 1px black;
+          box-shadow: 3px 2px 1px black;
+  max-width: 50%;
+  max-height: 50%;
+  text-align: center;
+}
+
+.book > .entete-book {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book > .entete-book > .icon {
+  height: 30px;
+  width: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.book > .entete-book > .icon .book > .entete-book > .icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#myBooks {
+  font-family: 'Spartan', sans-serif;
+  margin-right: 2%;
+  margin-left: 2%;
+  text-align: center;
+}
+
+#form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#form > #title {
+  width: 100%;
+  font-size: 1.8em;
+  margin-bottom: 2%;
+}
+
+#form > #author {
+  width: 100%;
+  font-size: 1.8em;
+}
+
+#logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("../logo/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5px 5px;
+  -webkit-box-shadow: 3px 2px 1px black;
+          box-shadow: 3px 2px 1px black;
+}
+
+#find-book {
+  background: #098080;
+  color: #F2F2F2;
+  width: 170px;
+  cursor: pointer;
+  border-radius: 3px 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+#find-book #find-book:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #006767;
+}
+
+#cancel {
+  background: #ef5134;
+  color: #F2F2F2;
+  width: 170px;
+  cursor: pointer;
+  border-radius: 3px 3px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+#cancel #cancel:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #ed3d1c;
+}
+
+#add-book {
+  background: #098080;
+  color: #F2F2F2;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 3px 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+#add-book #add-book:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #006767;
+}
+
+#bookpop, #booktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+  h1, h2 {
+    font-size: 1.5em;
+  }
+  label, #add-book, #find-book, #cancel {
+    font-size: 1.2em;
+  }
+  .book {
+    width: 38%;
+  }
+  #logo {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  label, #add-book, #find-book, #cancel {
+    font-size: 1.5em;
+  }
+  .book {
+    width: 25%;
+  }
+  #logo {
+    height: 160px;
+    width: 160px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
