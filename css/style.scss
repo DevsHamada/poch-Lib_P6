@@ -51,7 +51,12 @@ h1 {
                 margin-bottom: 2%;
                 background-color: $clr_book;
                 border-radius: 10px 10px;
-                width: 90%;   
+                width: 90%;  
+                transition: transform 300ms;
+                &:hover {
+                  transform: scale(1.1);
+                  background: transparent;
+                } 
                 & > .picture {
                   border: 2px solid;
                   @include box-shadow($clr_shadow);
@@ -69,12 +74,12 @@ h1 {
                         cursor: pointer;
                         transform: scale(1);
                         transition: transform 300ms; 
-                        .book > .entete-book > .icon:hover {
+                        &:hover {
                           transform: scale(1.2); }
                         }
                       }
                     }
-                              
+                
                
 #myBooks {
     font-family: 'Spartan', sans-serif;
@@ -114,7 +119,7 @@ h1 {
     margin-bottom: 2%;
     transform: scale(1);
     transition: transform 300ms; 
-    #find-book:hover {
+    &:hover {
       transform: scale(1.1);
       background-color: #006767; }
     }
@@ -126,7 +131,7 @@ h1 {
     border-radius: 3px 3px;
     transform: scale(1);
     transition: transform 300ms; 
-    #cancel:hover {
+    &:hover {
       transform: scale(1.1);
       background-color: #ed3d1c; }
     }
@@ -141,7 +146,7 @@ h1 {
         margin-bottom: 2%;
         transform: scale(1);
         transition: transform 300ms; 
-        #add-book:hover {
+        &:hover {
           transform: scale(1.1);
           background-color: #006767; }
         }
