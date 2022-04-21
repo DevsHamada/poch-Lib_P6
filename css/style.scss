@@ -51,7 +51,7 @@ h1 {
                 margin-bottom: 2%;
                 background-color: $clr_book;
                 border-radius: 10px 10px;
-                width: 90%;  
+                width: 40%;  
                 transition: transform 300ms;
                 &:hover {
                   transform: scale(1.1);
@@ -161,9 +161,9 @@ h1 {
           
             label, #add-book, #find-book, #cancel {
               font-size: 1.2em; }
-          
+            
             .book {
-              width: 38%; }
+            width: 45%; }
 
             #logo {
               @include height-width(120px,120px); } }
@@ -177,9 +177,9 @@ h1 {
           
             label, #add-book, #find-book, #cancel {
               font-size: 1.5em; }
-          
+            
             .book {
-              width: 25%; }
+                width: 44%; }
           
             #logo {
               @include height-width(160px,160px); } 

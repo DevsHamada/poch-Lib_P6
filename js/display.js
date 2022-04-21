@@ -10,6 +10,7 @@ function displayBtnAjout()
 { 
     document.getElementById("myBooks").insertAdjacentElement('afterbegin',newentete);
     document.getElementById("myBooks").insertAdjacentElement('beforeend',newresult);
+    
     newentete.insertAdjacentElement('afterbegin',title);
     newentete.insertAdjacentElement('afterbegin',newlogo);
     newresult.insertAdjacentElement('afterbegin',content);

@@ -54,16 +54,16 @@ h1 {
   margin-bottom: 2%;
   background-color: #d2d2d2;
   border-radius: 10px 10px;
-  width: 90%;
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  width: 40%;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
 }
 
 .book:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   background: transparent;
 }
 
@@ -235,7 +235,7 @@ h1 {
     font-size: 1.2em;
   }
   .book {
-    width: 38%;
+    width: 45%;
   }
   #logo {
     height: 120px;
@@ -254,7 +254,7 @@ h1 {
     font-size: 1.5em;
   }
   .book {
-    width: 25%;
+    width: 44%;
   }
   #logo {
     height: 160px;

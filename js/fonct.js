@@ -63,6 +63,9 @@ function searchForBook(event){
                i = i + 1;
           }                
       }
+      else {
+        alert("Aucun livre n’a été trouvé!");
+      }
     })
     .catch(function(err) {
       // Une erreur est survenue
@@ -121,7 +124,7 @@ function stockageLocal(event){
     console.log(exist);
     if (exist){
 
-      alert("Livre déja ajouté!");
+      alert("Vous ne pouvez ajouter deux fois le même livre!");
     }
     else 
     {
