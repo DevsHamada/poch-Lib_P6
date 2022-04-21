@@ -2,6 +2,7 @@
 
 <img src="https://github.com/DevsHamada/poch-Lib_P6/blob/master/logo/logo.png" alt="Poch'lib logo" width="150px">
 ## General Info
+
 “La Plume enchantée” wants to create an application for
 allow them to search for books online and then pick them up at the
 library.
