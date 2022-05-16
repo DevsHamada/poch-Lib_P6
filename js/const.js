@@ -1,38 +1,40 @@
+// crée un nouvel élément button  
 const btnadd = document.createElement("button");
 // crée un nouvel élément div
 const newDivtop = document.createElement("div");
-      newDivtop.id= "booktop";
-      newDivtop.className="booktop";
+newDivtop.id = "booktop";
+newDivtop.className = "booktop";
 
+// crée un nouvel élément div pour l'ensemble des livres rechercher 
 const newDivpop = document.createElement("div");
-    newDivpop.id= "bookpop";
-    newDivpop.className="bookpop"; 
+newDivpop.id = "bookpop";
+newDivpop.className = "bookpop";
 
-const newentete = document.createElement("div");
-    newentete.className="head"; 
+const newentete = document.createElement("header");
+newentete.className = "head";
 
 const newlogo = document.createElement("div");
-    newlogo.id= "logo";
+newlogo.id = "logo";
 
-const newresult= document.createElement("div");
-    newresult.id= "resultbook";
+const titreRech = document.createElement("h2");
+titreRech.innerHTML = "Résultats de recherche";  
+
+const newresult = document.createElement("section");
+newresult.id = "resultbook";
 
 const newform = document.createElement("div");
-      newform.id= "form";
+newform.id = "form";
 
 const h1titre = document.createElement("h1");
 
-const ins =document.getElementsByClassName("h2")[0]; // <h2 class="h2">Nouveau Livre</h2>
-const title =document.getElementsByClassName("title")[0]; // <h2 class="h2">Nouveau Livre</h2>
-const content =document.getElementById("content"); 
+const ins = document.getElementsByClassName("h2")[0]; // <h2 class="h2">Nouveau Livre</h2>
+const title = document.getElementsByClassName("title")[0]; // <h2 class="h2">Nouveau Livre</h2>
+const content = document.getElementById("content");
 const GOOGLE_BOOKS_API = "https://www.googleapis.com/books/v1/volumes";
 const iconBookMark = "./image/bookmark.svg";
 const iconBookMarkAdd = "./image/add-bookmark.svg";
 const iconTrash = "./image/remove-bookmark.svg";
 
-let exist =  false ; 
-let i = 1 ;
-let k = 1 ;
-let j = 0;
-let rech = 0;  
-let bMark = 0; 
+let exist = false;
+let rechFind = 0;
+let tagBookMark = false;

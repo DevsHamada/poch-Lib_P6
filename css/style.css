@@ -1,5 +1,5 @@
 body {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 label {
@@ -7,7 +7,7 @@ label {
 }
 
 h1 {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
   margin-left: 2%;
 }
 
@@ -54,16 +54,10 @@ h1 {
   margin-bottom: 2%;
   background-color: #d2d2d2;
   border-radius: 10px 10px;
-  width: 90%;
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  width: 40%;
 }
 
 .book:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
   background: transparent;
 }
 
@@ -109,7 +103,7 @@ h1 {
 }
 
 #myBooks {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
   margin-right: 2%;
   margin-left: 2%;
   text-align: center;
@@ -154,7 +148,7 @@ h1 {
 
 #find-book {
   background: #098080;
-  color: #F2F2F2;
+  color: #f2f2f2;
   width: 170px;
   cursor: pointer;
   border-radius: 3px 3px;
@@ -176,7 +170,7 @@ h1 {
 
 #cancel {
   background: #ef5134;
-  color: #F2F2F2;
+  color: #f2f2f2;
   width: 170px;
   cursor: pointer;
   border-radius: 3px 3px;
@@ -196,7 +190,7 @@ h1 {
 
 #add-book {
   background: #098080;
-  color: #F2F2F2;
+  color: #f2f2f2;
   height: 40px;
   width: 200px;
   cursor: pointer;
@@ -217,7 +211,8 @@ h1 {
   background-color: #006767;
 }
 
-#bookpop, #booktop {
+#bookpop,
+#booktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,14 +223,18 @@ h1 {
 }
 
 @media screen and (min-width: 740px) and (max-width: 1024px) {
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 1.5em;
   }
-  label, #add-book, #find-book, #cancel {
+  label,
+  #add-book,
+  #find-book,
+  #cancel {
     font-size: 1.2em;
   }
   .book {
-    width: 38%;
+    width: 45%;
   }
   #logo {
     height: 120px;
@@ -250,11 +249,14 @@ h1 {
   h2 {
     font-size: 2em;
   }
-  label, #add-book, #find-book, #cancel {
+  label,
+  #add-book,
+  #find-book,
+  #cancel {
     font-size: 1.5em;
   }
   .book {
-    width: 25%;
+    width: 44%;
   }
   #logo {
     height: 160px;
