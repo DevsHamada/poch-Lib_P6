@@ -6,6 +6,9 @@ if (document.readyState === 'complete') {
 
 }
 
+/*
+La fonction displayBtnAjout permet de d'afficher le button “Ajouter un livre”
+*/
 function displayBtnAjout() {
   document.getElementById("myBooks").insertAdjacentElement('afterbegin', newentete);
   document.getElementById("myBooks").insertAdjacentElement('beforeend', newresult);
@@ -21,6 +24,15 @@ function displayBtnAjout() {
   document.getElementById("add-book").addEventListener("click", displayNewBook);
 
 }
+/*
+La fonction displayBtnAjout permet de d'afficher un formulaire de recherche. 
+Ce formulaire est composé de deux champs :
+- un champ “Titre du livre” ;
+- un champ “Auteur”
+Ces deux champs ne doivent pas être vides lors de la soumission du
+formulaire.("searchForBook")
+
+*/
 function displayNewBook() {
   document.getElementById("myBooks").removeChild(btnadd);
   ins.insertAdjacentElement('afterend', newform);
@@ -57,12 +69,22 @@ function displayNewBook() {
   btndel.id = "cancel";
   newform.insertAdjacentElement('beforeend', btndel);
 
-  //     ins.insertAdjacentHTML('afterend', '<br />');
-
   document.getElementById("find-book").addEventListener("click", searchForBook);
   document.getElementById("cancel").addEventListener("click", function () { location.reload() });
 }
 
+/*
+La fonction displayBook permet d'afficher le résultat de la recherche qui 
+correspondant aux critères de recherche saisis, en utilisant l’API de Google
+Books.
+Pour chaque livre, les éléments suivants sont présents :
+- identifiant ;
+- titre ;
+- auteur (s’il y a plusieurs auteurs, n’afficher que le premier) ;
+- icône pour garder le livre dans sa liste (bookmark) ;
+- description (limitée aux 200 premiers caractères) ;
+- image.
+*/
 function displayBook(i, id, title, author, description, image) {
   // crée un nouvel élément div
   let newDiv = document.createElement("div");
@@ -70,7 +92,7 @@ function displayBook(i, id, title, author, description, image) {
   newDiv.className = "book";
   // ajoute le nœud texte au nouveau div créé
   newDivtop.insertAdjacentElement('afterbegin', newDiv);
-
+  content.insertAdjacentElement('afterbegin',titreRech);
   // crée un nouvel élément h4
   let newH4 = document.createElement("h3");
   newH4.id = i + "-Titre";
@@ -125,7 +147,10 @@ function displayBook(i, id, title, author, description, image) {
   newH4.addEventListener("click", stockageLocal);
 
 }
-
+/*
+La fonction displayBookMark permet d'afficher la liste des livres bookmark 
+Pour chaque livre, les éléments suivants sont présents :
+*/
 function displayBookMark() {
   //localStorage.removeItem("occurs");
 

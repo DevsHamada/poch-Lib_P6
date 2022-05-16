@@ -1,9 +1,11 @@
+// crée un nouvel élément button  
 const btnadd = document.createElement("button");
 // crée un nouvel élément div
 const newDivtop = document.createElement("div");
 newDivtop.id = "booktop";
 newDivtop.className = "booktop";
 
+// crée un nouvel élément div pour l'ensemble des livres rechercher 
 const newDivpop = document.createElement("div");
 newDivpop.id = "bookpop";
 newDivpop.className = "bookpop";
@@ -13,6 +15,9 @@ newentete.className = "head";
 
 const newlogo = document.createElement("div");
 newlogo.id = "logo";
+
+const titreRech = document.createElement("h2");
+titreRech.innerHTML = "Résultats de recherche";  
 
 const newresult = document.createElement("section");
 newresult.id = "resultbook";

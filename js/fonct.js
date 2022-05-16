@@ -32,8 +32,6 @@ function searchForBook(event) {
         }
       })
       .then(function (value) {
-        //  console.log(value);
-        // console.log(value.items);
         if (value.totalItems > 0) {
           // ajoute le nœud texte au nouveau div créé
           content.insertAdjacentElement("afterbegin", newDivtop);
@@ -66,11 +64,10 @@ function searchForBook(event) {
         }
       })
       .catch(function (err) {
-        // Une erreur est survenue
+        alert("Probléme au niveau du call API");
       });
   }
 }
-
 /*
 La fonction verifybook permet de vérifier si le livre est déjà ajouter à la poch'liste
 */
@@ -93,7 +90,6 @@ function verifybook(id) {
       exist = true;
     }
 
-    //console.log("ko");
     nboc = nboc - 1;
   }
 }
@@ -101,6 +97,7 @@ function verifybook(id) {
 /*
 La fonction stockageLocal permet de stocker en localStorage les livres bookmark
 */
+
 function stockageLocal(event) {
   event.preventDefault();
 
@@ -119,8 +116,6 @@ function stockageLocal(event) {
   let picture = document.getElementById(j + "-image").src;
 
   verifybook(j + "-id");
-
-  console.log(exist);
   if (exist) {
     alert("Vous ne pouvez ajouter deux fois le même livre!");
   } else {
@@ -142,9 +137,11 @@ function stockageLocal(event) {
     document.getElementById(j + "-icon").src = iconBookMark;
   }
 }
+
 /*
 La fonction stockageremove permet de retirer du localStorage les livres supprimés
 */
+
 function stockageremove(event) {
   event.preventDefault();
   let l = 0;
